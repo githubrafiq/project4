@@ -1,0 +1,14 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Post</title>
+</head>
+<body>
+{% for p in posts%}
+<h3>{{p.title}}</h3>
+<img src="{{p.image.url}}" alt="{{p.title}}" width="100px">
+<hr>
+{% endfor%}
+</body>
+</html>
